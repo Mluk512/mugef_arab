@@ -47,8 +47,8 @@ ul {
 .main-heading::before { content: ""; position: absolute; background:url(../images/Group\ 317.png); width: 33px; height: 12px; top:50%; right: -40px; transform:translateY(-50%); -webkit-transform:translateY(-50%); -moz-transform:translateY(-50%); -ms-transform:translateY(-50%); -o-transform:translateY(-50%); }
 .main-heading::after  { content: ""; position: absolute; background:url(../images/Group\ 318.png); width: 33px; height: 12px; top:50%; left: -40px; transform:translateY(-50%); -webkit-transform:translateY(-50%); -moz-transform:translateY(-50%); -ms-transform:translateY(-50%); -o-transform:translateY(-50%); }
 /* start header */
-header {position: absolute;left: px;z-index: 1;top: 10px;width: 100%;direction: ltr;}
-header .container { min-height: 94px;position: relative;padding: 5px; display: flex; justify-content: space-between; align-items: center; background-color:#fff0bfdb; border-radius:6px ; -webkit-border-radius:; -moz-border-radius:; -ms-border-radius:; -o-border-radius:; }
+header {position: fixed;z-index: 1;top: 10px;width: 100%;direction: ltr;}
+header .container { min-height: 70px;position: relative;padding: 5px; display: flex; justify-content: space-between; align-items: center; background-color:#fff0bfdb; border-radius:6px ; -webkit-border-radius:; -moz-border-radius:; -ms-border-radius:; -o-border-radius:; }
 header .container img {width: 70px;}
 header .container nav {flex: 1;display: flex;justify-content: flex-end;align-items: center;}
 header .container nav .toggel-menu {display:none ;color: var(--main-color-first);font-size: 30px;}
@@ -56,7 +56,7 @@ header .container nav .toggel-menu {display:none ;color: var(--main-color-first)
 header .container nav ul {display: flex;}
 @media (max-width:992px){header .container nav ul {display: none;}
 header .container nav .toggel-menu:hover + ul {display: flex;position: absolute;top: 100%;width: 50%;right: 0;background:rgba(0 0 0 / 70%);justify-content: right;align-items: flex-end;direction: rtl;padding: 12px;border-radius: 0 0 6px 6px;}
-header .container nav .toggel-menu:hover + ul li a {display: flex;padding: 15px;color: var(--main-color-second);}}
+header .container nav .toggel-menu:hover + ul li a {display: flex;padding: 15px !important;color: var(--main-color-second);}}
 header .container nav .toggel-menu:hover + ul li a:hover {color: var(--main-color-thared);}
 header .container nav ul li a {font-size: 17px;font-weight: 900;color: var(--main-color-first);padding: 10px;}
 header .container nav ul li a:hover {color: var(--main-color-thared);}
